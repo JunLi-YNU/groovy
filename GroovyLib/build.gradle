@@ -1,0 +1,13 @@
+plugins {
+    id 'java-library'
+    id 'groovy'
+}
+//导入到本地的Groovy SDK
+dependencies {
+    implementation(localGroovy())
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
